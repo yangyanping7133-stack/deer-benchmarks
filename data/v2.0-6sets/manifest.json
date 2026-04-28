@@ -1,0 +1,49 @@
+{
+  "name": "CRC-QAD",
+  "version": "2.0",
+  "description": "CoT Compression Benchmark - 6 Dataset Full Suite",
+  "total_questions": 1445,
+  "datasets": [
+    {
+      "dataset": "GSM8K",
+      "file": "gsm8k.json",
+      "count": 500,
+      "type": "math"
+    },
+    {
+      "dataset": "MATH-500",
+      "file": "math500.json",
+      "count": 500,
+      "type": "math"
+    },
+    {
+      "dataset": "AMC",
+      "file": "amc.json",
+      "count": 40,
+      "type": "math"
+    },
+    {
+      "dataset": "GPQA",
+      "file": "gpqa.json",
+      "count": 200,
+      "type": "mc"
+    },
+    {
+      "dataset": "AIME",
+      "file": "aime.json",
+      "count": 30,
+      "type": "math"
+    },
+    {
+      "dataset": "LiveCodeBench",
+      "file": "livecodebench.json",
+      "count": 175,
+      "type": "code"
+    }
+  ],
+  "pilot": {
+    "file": "v2.0-6sets-pilot/test_cases.json",
+    "count": 6,
+    "description": "1 question per dataset for quick validation"
+  }
+}

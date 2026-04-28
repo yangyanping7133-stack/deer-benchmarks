@@ -1,0 +1,70 @@
+{
+  "name": "CRC-QAD Pilot Test Suite",
+  "version": "1.0",
+  "description": "6 datasets, 1 question each for DEER validation",
+  "datasets": [
+    "gsm8k",
+    "math500",
+    "amc",
+    "gpqa",
+    "aime",
+    "livecodebench"
+  ],
+  "total_questions": 6,
+  "test_cases": [
+    {
+      "id": "v1.0-gsm8k-0001",
+      "dataset": "GSM8K",
+      "dataset_key": "gsm8k",
+      "question": "The girls are trying to raise money for a carnival. Kim raises $320 more than Alexandra, who raises $430, and Maryam raises $400 more than Sarah, who raises $300. How much money, in dollars, did they all raise in total?",
+      "answer": "Kim raises 320+430=<<320+430=750>>750 dollars.\nMaryam raises 400+300=<<400+300=700>>700 dollars.\nThey raise 750+430+400+700=<<750+430+400+700=2280>>2280 dollars.\n#### 2280",
+      "type": "math",
+      "source_id": "gsm8k-0000"
+    },
+    {
+      "id": "v1.0-math500-0001",
+      "dataset": "MATH-500",
+      "dataset_key": "math500",
+      "question": "Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+      "answer": "\\left( 3, \\frac{\\pi}{2} \\right)",
+      "type": "math",
+      "source_id": "math500-0000"
+    },
+    {
+      "id": "v1.0-amc-0001",
+      "dataset": "AMC",
+      "dataset_key": "amc",
+      "question": "Cities $A$ and $B$ are $45$ miles apart. Alicia lives in $A$ and Beth lives in $B$. Alicia bikes towards $B$ at 18 miles per hour. Leaving at the same time, Beth bikes toward $A$ at 12 miles per hour. How many miles from City $A$ will they be when they meet?",
+      "answer": "27.0",
+      "type": "math",
+      "source_id": "amc-0000"
+    },
+    {
+      "id": "v1.0-gpqa-0001",
+      "dataset": "GPQA",
+      "dataset_key": "gpqa",
+      "question": "Cities control the amount of pollution that is allowed to come from cars. How does this most likely help people?\nA. The air stays cleaner.\nB. Cars can travel at faster speeds.\nC. The skills of the drivers improve.\nD. It becomes safer to drive on the roads.\nAnswer:",
+      "answer": "A",
+      "type": "mc",
+      "source_id": "gpqa-0000"
+    },
+    {
+      "id": "v1.0-aime-0001",
+      "dataset": "AIME",
+      "dataset_key": "aime",
+      "question": "Patrick started walking at a constant rate along a straight road from school to the park. One hour after Patrick left, Tanya started running along the same road from school to the park. One hour after Tanya left, Jose started bicycling along the same road from school to the park. Tanya ran at a constant rate of $2$ miles per hour faster than Patrick walked, Jose bicycled at a constant rate of $7$ miles per hour faster than Tanya ran, and all three arrived at the park at the same time. The distance from the school to the park is $\\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "answer": "277",
+      "type": "math",
+      "source_id": "aime-0000"
+    },
+    {
+      "id": "v1.0-livecodebench-0001",
+      "dataset": "LiveCodeBench",
+      "dataset_key": "livecodebench",
+      "question": "Among the 81 integers that appear in the 9-by-9 multiplication table, find the sum of those that are not X.\n\nThere is a grid of size 9 by 9.\r\nEach cell of the grid contains an integer: the cell at the i-th row from the top and the j-th column from the left contains i \\times j.\r\nYou are given an integer X. Among the 81 integers written in this grid, find the sum of those that are not X. If the same value appears in multiple cells, add it for each cell.\n\nInput\n\nThe input is given from Standard Input in the following format:\nX\n\nOutput\n\nPrint the sum of the integers that are not X among the 81 integers written in the grid.\n\nConstraints\n\n\n- X is an integer between 1 and 81, inclusive.\n\nSample Input 1\n\n1\n\nSample Output 1\n\n2024\r\n\nThe only cell with 1 in the grid is the cell at the 1st row from the top and 1st column from the left. Summing all integers that are not 1 yields 2024.\n\nSample Input 2\n\n11\n\nSample Output 2\n\n2025\r\n\nThere is no cell containing 11 in the grid. Thus, the answer is 2025, the sum of all 81 integers.\n\nSample Input 3\n\n24\n\nSample Output 3\n\n1929",
+      "answer": "easy",
+      "type": "code",
+      "source_id": "lcb-0000"
+    }
+  ]
+}
