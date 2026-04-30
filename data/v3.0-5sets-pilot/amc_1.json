@@ -1,0 +1,12 @@
+[
+  {
+    "id": "v3.0-amc-0001",
+    "dataset": "AMC",
+    "dataset_key": "amc",
+    "question": "Cities $A$ and $B$ are $45$ miles apart. Alicia lives in $A$ and Beth lives in $B$. Alicia bikes towards $B$ at 18 miles per hour. Leaving at the same time, Beth bikes toward $A$ at 12 miles per hour. How many miles from City $A$ will they be when they meet?",
+    "answer": "27.0",
+    "type": "math",
+    "source_index": 0,
+    "version": "3.0"
+  }
+]

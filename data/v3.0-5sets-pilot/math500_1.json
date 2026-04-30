@@ -1,0 +1,12 @@
+[
+  {
+    "id": "v3.0-math500-0001",
+    "dataset": "MATH-500",
+    "dataset_key": "math500",
+    "question": "Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+    "answer": "\\left( 3, \\frac{\\pi}{2} \\right)",
+    "type": "math",
+    "source_index": 0,
+    "version": "3.0"
+  }
+]

@@ -1,0 +1,65 @@
+{
+  "name": "CRC-QAD v3.0 Pilot",
+  "version": "3.0",
+  "description": "5 datasets x 1 case each (no LiveCodeBench)",
+  "total_questions": 5,
+  "datasets": [
+    "gsm8k",
+    "math500",
+    "amc",
+    "gpqa",
+    "aime"
+  ],
+  "test_cases": [
+    {
+      "id": "v3.0-gsm8k-0001",
+      "dataset": "GSM8K",
+      "dataset_key": "gsm8k",
+      "question": "The girls are trying to raise money for a carnival. Kim raises $320 more than Alexandra, who raises $430, and Maryam raises $400 more than Sarah, who raises $300. How much money, in dollars, did they all raise in total?",
+      "answer": "Kim raises 320+430=<<320+430=750>>750 dollars.\nMaryam raises 400+300=<<400+300=700>>700 dollars.\nThey raise 750+430+400+700=<<750+430+400+700=2280>>2280 dollars.\n#### 2280",
+      "type": "math",
+      "source_index": 0,
+      "version": "3.0"
+    },
+    {
+      "id": "v3.0-math500-0001",
+      "dataset": "MATH-500",
+      "dataset_key": "math500",
+      "question": "Convert the point $(0,3)$ in rectangular coordinates to polar coordinates.  Enter your answer in the form $(r,\\theta),$ where $r > 0$ and $0 \\le \\theta < 2 \\pi.$",
+      "answer": "\\left( 3, \\frac{\\pi}{2} \\right)",
+      "type": "math",
+      "source_index": 0,
+      "version": "3.0"
+    },
+    {
+      "id": "v3.0-amc-0001",
+      "dataset": "AMC",
+      "dataset_key": "amc",
+      "question": "Cities $A$ and $B$ are $45$ miles apart. Alicia lives in $A$ and Beth lives in $B$. Alicia bikes towards $B$ at 18 miles per hour. Leaving at the same time, Beth bikes toward $A$ at 12 miles per hour. How many miles from City $A$ will they be when they meet?",
+      "answer": "27.0",
+      "type": "math",
+      "source_index": 0,
+      "version": "3.0"
+    },
+    {
+      "id": "v3.0-gpqa-0001",
+      "dataset": "GPQA",
+      "dataset_key": "gpqa",
+      "question": "Cities control the amount of pollution that is allowed to come from cars. How does this most likely help people?\nA. The air stays cleaner.\nB. Cars can travel at faster speeds.\nC. The skills of the drivers improve.\nD. It becomes safer to drive on the roads.\nAnswer:",
+      "answer": "A",
+      "type": "mc",
+      "source_index": 0,
+      "version": "3.0"
+    },
+    {
+      "id": "v3.0-aime-0001",
+      "dataset": "AIME",
+      "dataset_key": "aime",
+      "question": "Patrick started walking at a constant rate along a straight road from school to the park. One hour after Patrick left, Tanya started running along the same road from school to the park. One hour after Tanya left, Jose started bicycling along the same road from school to the park. Tanya ran at a constant rate of $2$ miles per hour faster than Patrick walked, Jose bicycled at a constant rate of $7$ miles per hour faster than Tanya ran, and all three arrived at the park at the same time. The distance from the school to the park is $\\frac{m}{n}$ miles, where $m$ and $n$ are relatively prime positive integers. Find $m + n$.",
+      "answer": "277",
+      "type": "math",
+      "source_index": 0,
+      "version": "3.0"
+    }
+  ]
+}

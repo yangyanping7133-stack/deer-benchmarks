@@ -1,0 +1,13 @@
+
+############################################################
+  Running: BASELINE
+############################################################
+
+============================================================
+v3.0 DEMO | Method: baseline | Total: 5 cases
+
+Start: 16:04:38
+  Pending: 5 | Done: 0
+  [1/5]  gpqa/v3.0-gpqa-0001 E2E=31.7s tok=522 think=427 stop=stop
+  [2/5]  gsm8k/v3.0-gsm8k-0001 E2E=96.2s tok=1590 think=878 stop=stop
+  [3/5]  math500/v3.0-math500-0001 E2E=102.0s tok=1688 think=1103 stop=stop

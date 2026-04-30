@@ -1,0 +1,12 @@
+[
+  {
+    "id": "v3.0-gpqa-0001",
+    "dataset": "GPQA",
+    "dataset_key": "gpqa",
+    "question": "Cities control the amount of pollution that is allowed to come from cars. How does this most likely help people?\nA. The air stays cleaner.\nB. Cars can travel at faster speeds.\nC. The skills of the drivers improve.\nD. It becomes safer to drive on the roads.\nAnswer:",
+    "answer": "A",
+    "type": "mc",
+    "source_index": 0,
+    "version": "3.0"
+  }
+]
