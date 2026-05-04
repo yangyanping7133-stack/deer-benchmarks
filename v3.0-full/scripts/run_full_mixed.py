@@ -22,12 +22,12 @@ TEMPERATURE = 0.6
 CONCURRENCY = 256
 
 DEER_PARAMS = {
-    "threshold": 0.98,
+    "threshold": 0.95,
     "prob_check_tokens": 10,
-    "think_ratio": 0.9,
-    "max_judge_steps": 8,
+    "think_ratio": 0.8,
+    "max_judge_steps": 4,
     "temperature": 0.6,
-    "min_think_tokens": 2000,
+    "min_think_tokens": 1000,
 }
 
 DATASET_CONFIG = {
