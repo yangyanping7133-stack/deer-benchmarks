@@ -1,0 +1,55 @@
+Loaded 125 regression cases
+
+>>> Testing: v4a: threshold=0.95, steps=20, think_ratio=0.8, min_think=500
+  [5/125] fixed=0 elapsed=1.4min gsm8k/gsm8k-0406 stop=deer_exit E2E=74.8s
+  [10/125] fixed=0 elapsed=1.5min math500/math500-0491 stop=deer_exit E2E=73.9s
+  [15/125] fixed=1 elapsed=1.7min gsm8k/gsm8k-0253 stop=deer_exit E2E=95.7s
+  [20/125] fixed=4 elapsed=2.0min gsm8k/gsm8k-0212 stop=natural E2E=117.0s
+  [25/125] fixed=8 elapsed=2.2min gsm8k/gsm8k-0473 stop=natural E2E=122.0s
+  [30/125] fixed=8 elapsed=2.3min math500/math500-0390 stop=deer_exit E2E=122.9s
+  [35/125] fixed=8 elapsed=2.4min gsm8k/gsm8k-0469 stop=deer_exit E2E=135.8s
+  [40/125] fixed=11 elapsed=2.5min math500/math500-0497 stop=deer_exit E2E=136.3s
+  [45/125] fixed=14 elapsed=2.8min math500/math500-0025 stop=deer_exit E2E=158.4s
+  [50/125] fixed=15 elapsed=2.9min aime/aime-0023 stop=max_steps E2E=157.8s
+  [55/125] fixed=16 elapsed=3.2min gsm8k/gsm8k-0361 stop=natural E2E=185.1s
+  [60/125] fixed=17 elapsed=3.3min math500/math500-0232 stop=deer_exit E2E=186.1s
+  [65/125] fixed=19 elapsed=3.6min gsm8k/gsm8k-0037 stop=natural E2E=216.3s
+  [70/125] fixed=23 elapsed=3.8min math500/math500-0401 stop=deer_exit E2E=215.0s
+  [75/125] fixed=24 elapsed=4.5min gsm8k/gsm8k-0414 stop=natural E2E=265.5s
+  [80/125] fixed=26 elapsed=5.3min math500/math500-0296 stop=deer_exit E2E=305.6s
+  [85/125] fixed=27 elapsed=6.5min gsm8k/gsm8k-0142 stop=natural E2E=385.6s
+  [90/125] fixed=31 elapsed=7.6min math500/math500-0334 stop=natural E2E=444.5s
+  [95/125] fixed=32 elapsed=8.5min math500/math500-0224 stop=natural E2E=497.8s
+  [100/125] fixed=33 elapsed=9.4min math500/math500-0063 stop=deer_exit E2E=555.8s
+  [105/125] fixed=37 elapsed=11.4min gsm8k/gsm8k-0247 stop=max_steps E2E=681.4s
+  [110/125] fixed=39 elapsed=12.8min math500/math500-0197 stop=natural E2E=755.0s
+  [115/125] fixed=40 elapsed=14.6min math500/math500-0217 stop=deer_exit E2E=866.3s
+  [120/125] fixed=40 elapsed=18.0min math500/math500-0481 stop=deer_exit E2E=1066.0s
+  [125/125] fixed=41 elapsed=44.4min math500/math500-0094 stop=natural E2E=2653.1s
+
+============================================================
+ITERATION: v4a: threshold=0.95, steps=20, think_ratio=0.8, min_think=500
+Params: {
+  "threshold": 0.95,
+  "prob_check_tokens": 10,
+  "think_ratio": 0.8,
+  "max_judge_steps": 20,
+  "temperature": 0.6,
+  "min_think_tokens": 500
+}
+Cases: 125 | Fixed: 41 | Still wrong: 84 | Errors: 0
+Elapsed: 44.4min
+Stop reasons: {'deer_exit': 61, 'natural': 45, 'max_steps': 19}
+  Fixed: 41/125 | Remaining: 84
+
+>>> Testing: v4b: threshold=0.98, steps=20, think_ratio=0.8, min_think=800
+  [5/125] fixed=2 elapsed=1.8min gsm8k/gsm8k-0490 stop=deer_exit E2E=100.9s
+  [10/125] fixed=2 elapsed=2.0min gsm8k/gsm8k-0361 stop=max_steps E2E=114.1s
+  [15/125] fixed=5 elapsed=2.2min gsm8k/gsm8k-0302 stop=deer_exit E2E=125.9s
+  [20/125] fixed=6 elapsed=2.4min math500/math500-0170 stop=deer_exit E2E=133.6s
+  [25/125] fixed=9 elapsed=3.1min math500/math500-0379 stop=natural E2E=172.2s
+  [30/125] fixed=11 elapsed=3.5min amc/amc-0035 stop=natural E2E=194.9s
+  [35/125] fixed=12 elapsed=3.8min gsm8k/gsm8k-0420 stop=natural E2E=220.4s
+  [40/125] fixed=13 elapsed=4.0min gsm8k/gsm8k-0142 stop=natural E2E=234.9s
+  [45/125] fixed=16 elapsed=4.3min gpqa/gpqa-0131 stop=natural E2E=239.0s
+  [50/125] fixed=16 elapsed=4.5min gsm8k/gsm8k-0132 stop=natural E2E=268.9s

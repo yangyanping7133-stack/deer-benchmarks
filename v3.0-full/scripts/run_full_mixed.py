@@ -13,7 +13,7 @@ import httpx
 API = "http://127.0.0.1:8000"
 MODEL = "/root/models/Qwen/Qwen3-32B"
 DATA_DIR = "/root/benchmarks/data/CRC-QAD/v2.0-6sets"
-OUT_DIR = "/root/benchmarks/results/v3.0-full"
+OUT_DIR = "/root/benchmarks/results/v3.0-full/iter_v1"
 LOG_FILE = os.path.join(OUT_DIR, "progress.log")
 os.makedirs(OUT_DIR, exist_ok=True)
 
@@ -28,6 +28,11 @@ DEER_PARAMS = {
     "max_judge_steps": 4,
     "temperature": 0.6,
     "min_think_tokens": 1000,
+}
+
+PROGRESSIVE_BUDGET_LEVELS = [0.5, 0.8, 1.0]
+BASELINE_AVG_THINK = {
+    "gsm8k": 1144, "math500": 2799, "gpqa": 651, "amc": 4240, "aime": 7986,
 }
 
 DATASET_CONFIG = {

@@ -1,0 +1,58 @@
+Loaded 125 regression cases
+
+============================================================
+>>> Testing: v5-per-dataset-adaptive
+  gsm8k: budget=2000tok steps=8 thresh=0.9 min_think=400
+  math500: budget=5500tok steps=15 thresh=0.92 min_think=800
+  gpqa: budget=900tok steps=5 thresh=0.9 min_think=200
+  amc: budget=11000tok steps=25 thresh=0.95 min_think=1500
+  aime: budget=17000tok steps=30 thresh=0.95 min_think=2000
+  [5/125] fixed=0 elapsed=0.3min aime/aime-0022 stop=natural steps=0 E2E=1.0s
+  [10/125] fixed=0 elapsed=1.3min gsm8k/gsm8k-0420 stop=deer_exit steps=5 E2E=71.4s
+  [15/125] fixed=3 elapsed=1.4min gpqa/gpqa-0131 stop=deer_exit steps=1 E2E=72.4s
+  [20/125] fixed=6 elapsed=1.5min gsm8k/gsm8k-0470 stop=deer_exit steps=3 E2E=86.3s
+  [25/125] fixed=8 elapsed=1.8min gsm8k/gsm8k-0098 stop=deer_exit steps=5 E2E=105.4s
+  [30/125] fixed=10 elapsed=2.0min math500/math500-0497 stop=deer_exit steps=7 E2E=108.0s
+  [35/125] fixed=11 elapsed=2.1min gsm8k/gsm8k-0298 stop=deer_exit steps=3 E2E=123.7s
+  [40/125] fixed=12 elapsed=2.4min gsm8k/gsm8k-0406 stop=fallback steps=8 E2E=140.6s
+  [45/125] fixed=14 elapsed=2.7min gsm8k/gsm8k-0353 stop=natural steps=5 E2E=157.4s
+  [50/125] fixed=14 elapsed=2.9min math500/math500-0222 stop=deer_exit steps=11 E2E=164.1s
+  [55/125] fixed=16 elapsed=3.0min gsm8k/gsm8k-0262 stop=natural steps=4 E2E=174.7s
+  [60/125] fixed=17 elapsed=3.2min math500/math500-0188 stop=deer_exit steps=9 E2E=182.8s
+  [65/125] fixed=18 elapsed=3.5min math500/math500-0425 stop=deer_exit steps=9 E2E=196.0s
+  [70/125] fixed=20 elapsed=3.6min gsm8k/gsm8k-0367 stop=natural steps=2 E2E=208.5s
+  [75/125] fixed=21 elapsed=3.8min math500/math500-0401 stop=deer_exit steps=5 E2E=218.5s
+  [80/125] fixed=24 elapsed=4.1min math500/math500-0197 stop=deer_exit steps=3 E2E=236.8s
+  [85/125] fixed=28 elapsed=4.3min math500/math500-0334 stop=natural steps=4 E2E=246.6s
+  [90/125] fixed=29 elapsed=4.4min math500/math500-0170 stop=deer_exit steps=3 E2E=256.5s
+  [95/125] fixed=29 elapsed=4.6min math500/math500-0458 stop=natural steps=3 E2E=266.2s
+  [100/125] fixed=31 elapsed=5.1min math500/math500-0138 stop=natural steps=15 E2E=296.2s
+  [105/125] fixed=34 elapsed=5.5min math500/math500-0302 stop=deer_exit steps=6 E2E=320.8s
+  [110/125] fixed=35 elapsed=6.9min math500/math500-0292 stop=natural steps=6 E2E=405.9s
+  [115/125] fixed=37 elapsed=9.2min math500/math500-0166 stop=natural steps=7 E2E=546.3s
+  [120/125] fixed=39 elapsed=13.6min math500/math500-0375 stop=natural steps=15 E2E=804.2s
+  [125/125] fixed=40 elapsed=45.0min math500/math500-0018 stop=fallback steps=15 E2E=2694.6s
+
+============================================================
+CONFIG: v5-per-dataset-adaptive
+Cases: 125 | Fixed: 40 | Still wrong: 85 | Errors: 0
+Elapsed: 45.0min
+Stop reasons: {'natural': 50, 'deer_exit': 68, 'fallback': 7}
+Fallback to baseline: 19
+Per-dataset:
+  aime: 0/6
+  gpqa: 1/4
+  gsm8k: 18/50
+  math500: 18/58
+  amc: 3/7
+  Fixed: 40/125 | Remaining: 85
+
+============================================================
+BEST: v5-per-dataset-adaptive
+Fixed: 40/125
+  gsm8k: {"think_budget": 2000, "max_judge_steps": 8, "threshold": 0.9, "min_think_tokens": 400}
+  math500: {"think_budget": 5500, "max_judge_steps": 15, "threshold": 0.92, "min_think_tokens": 800}
+  gpqa: {"think_budget": 900, "max_judge_steps": 5, "threshold": 0.9, "min_think_tokens": 200}
+  amc: {"think_budget": 11000, "max_judge_steps": 25, "threshold": 0.95, "min_think_tokens": 1500}
+  aime: {"think_budget": 17000, "max_judge_steps": 30, "threshold": 0.95, "min_think_tokens": 2000}
+Saved: /root/benchmarks/results/v3.0-full/iter_v1/adaptive_v5_20260504_222132.json

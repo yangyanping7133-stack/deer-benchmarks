@@ -1,0 +1,26 @@
+Loaded 125 regression cases
+
+>>> Testing: v3: threshold=0.98, steps=12, think_ratio=1.0, min_think=800, no_stop_wait
+  [5/125] fixed=5 elapsed=1.6min gsm8k/gsm8k-0262 stop=natural E2E=91.2s
+  [10/125] fixed=6 elapsed=2.0min gsm8k/gsm8k-0445 stop=natural E2E=114.2s
+  [15/125] fixed=8 elapsed=2.5min gsm8k/gsm8k-0454 stop=natural E2E=142.5s
+  [20/125] fixed=9 elapsed=2.7min gsm8k/gsm8k-0439 stop=natural E2E=156.8s
+  [25/125] fixed=13 elapsed=2.9min gsm8k/gsm8k-0004 stop=natural E2E=172.6s
+  [30/125] fixed=16 elapsed=3.2min gsm8k/gsm8k-0470 stop=natural E2E=183.6s
+  [35/125] fixed=19 elapsed=3.4min math500/math500-0334 stop=natural E2E=193.5s
+  [40/125] fixed=22 elapsed=3.8min math500/math500-0379 stop=natural E2E=216.8s
+  [45/125] fixed=23 elapsed=4.3min math500/math500-0331 stop=natural E2E=244.9s
+  [50/125] fixed=25 elapsed=4.7min math500/math500-0429 stop=natural E2E=266.3s
+  [55/125] fixed=26 elapsed=5.2min gsm8k/gsm8k-0435 stop=natural E2E=306.3s
+  [60/125] fixed=29 elapsed=6.5min math500/math500-0369 stop=natural E2E=375.7s
+  [65/125] fixed=32 elapsed=6.7min gsm8k/gsm8k-0389 stop=natural E2E=396.1s
+  [70/125] fixed=33 elapsed=7.2min math500/math500-0282 stop=natural E2E=423.3s
+  [75/125] fixed=37 elapsed=7.8min math500/math500-0292 stop=natural E2E=456.7s
+  [80/125] fixed=41 elapsed=8.2min math500/math500-0296 stop=natural E2E=478.3s
+  [85/125] fixed=43 elapsed=8.6min gsm8k/gsm8k-0364 stop=natural E2E=513.3s
+  [90/125] fixed=45 elapsed=9.3min math500/math500-0302 stop=natural E2E=548.8s
+  [95/125] fixed=47 elapsed=10.8min math500/math500-0222 stop=natural E2E=637.3s
+  [100/125] fixed=47 elapsed=13.4min math500/math500-0217 stop=natural E2E=791.9s
+  [105/125] fixed=52 elapsed=17.1min math500/math500-0119 stop=natural E2E=1018.5s
+  [110/125] fixed=52 elapsed=18.2min math500/math500-0485 stop=natural E2E=1078.7s
+  [115/125] fixed=53 elapsed=21.6min math500/math500-0340 stop=natural E2E=1281.0s

@@ -1,0 +1,49 @@
+Loaded 125 regression cases
+
+============================================================
+>>> Testing: P1: progressive [0.5x, 0.8x, 1.0x]
+  gsm8k: levels=[0.5, 0.8, 1.0] avg_think=1144
+  math500: levels=[0.5, 0.8, 1.0] avg_think=2799
+  gpqa: levels=[0.5, 0.8, 1.0] avg_think=651
+  amc: levels=[0.5, 0.8, 1.0] avg_think=4240
+  aime: levels=[0.5, 0.8, 1.0] avg_think=7986
+  [5/125] fixed=5 elapsed=1.7min gpqa/gpqa-0080 stop=natural budget=L1(0.5x) E2E=90.7s
+  [10/125] fixed=6 elapsed=2.1min gsm8k/gsm8k-0445 stop=natural budget=L1(0.5x) E2E=121.4s
+  [15/125] fixed=10 elapsed=2.4min gsm8k/gsm8k-0140 stop=natural budget=L1(0.5x) E2E=141.7s
+  [20/125] fixed=12 elapsed=2.6min gsm8k/gsm8k-0049 stop=natural budget=L1(0.5x) E2E=154.5s
+  [25/125] fixed=12 elapsed=3.0min gsm8k/gsm8k-0469 stop=natural budget=L1(0.5x) E2E=173.8s
+  [30/125] fixed=15 elapsed=3.2min gsm8k/gsm8k-0439 stop=natural budget=L1(0.5x) E2E=186.6s
+  [35/125] fixed=18 elapsed=3.4min amc/amc-0034 stop=natural budget=L1(0.5x) E2E=193.4s
+  [40/125] fixed=22 elapsed=4.1min gsm8k/gsm8k-0280 stop=natural budget=L2(0.8x) E2E=242.1s
+  [45/125] fixed=26 elapsed=4.8min gsm8k/gsm8k-0423 stop=natural budget=L2(0.8x) E2E=281.5s
+  [50/125] fixed=27 elapsed=5.3min gsm8k/gsm8k-0302 stop=natural budget=L2(0.8x) E2E=313.5s
+  [55/125] fixed=28 elapsed=5.6min math500/math500-0287 stop=natural budget=L1(0.5x) E2E=327.5s
+  [60/125] fixed=29 elapsed=6.1min gsm8k/gsm8k-0395 stop=natural budget=L2(0.8x) E2E=360.0s
+  [65/125] fixed=30 elapsed=6.6min gsm8k/gsm8k-0094 stop=natural budget=L2(0.8x) E2E=394.0s
+  [70/125] fixed=33 elapsed=7.0min aime/aime-0015 stop=natural budget=L1(0.5x) E2E=406.6s
+  [75/125] fixed=34 elapsed=7.8min math500/math500-0408 stop=natural budget=L1(0.5x) E2E=457.8s
+  [80/125] fixed=38 elapsed=8.1min aime/aime-0005 stop=natural budget=L1(0.5x) E2E=470.7s
+  [85/125] fixed=41 elapsed=10.1min math500/math500-0232 stop=natural budget=L2(0.8x) E2E=595.7s
+  [90/125] fixed=42 elapsed=11.1min math500/math500-0222 stop=natural budget=L2(0.8x) E2E=655.4s
+  [95/125] fixed=43 elapsed=12.1min math500/math500-0292 stop=natural budget=L2(0.8x) E2E=715.0s
+  [100/125] fixed=44 elapsed=13.9min amc/amc-0020 stop=natural budget=L2(0.8x) E2E=821.8s
+  [105/125] fixed=45 elapsed=15.2min math500/math500-0188 stop=natural budget=L2(0.8x) E2E=902.7s
+  [110/125] fixed=46 elapsed=16.7min math500/math500-0470 stop=natural budget=L2(0.8x) E2E=992.3s
+  [115/125] fixed=46 elapsed=17.4min math500/math500-0026 stop=natural budget=L2(0.8x) E2E=1037.8s
+  [120/125] fixed=47 elapsed=20.9min amc/amc-0039 stop=natural budget=L2(0.8x) E2E=1241.8s
+  [125/125] fixed=48 elapsed=32.8min math500/math500-0018 stop=truncated_L3 budget=L3(1.0x) E2E=1961.1s
+
+============================================================
+CONFIG: P1: progressive [0.5x, 0.8x, 1.0x]
+Cases: 125 | Fixed: 48 | Still wrong: 77 | Errors: 0
+Elapsed: 32.8min
+Stop reasons: {'natural': 124, 'truncated_L3': 1}
+Budget levels: {'L1(0.5x)': 63, 'L2(0.8x)': 58, 'L3(1.0x)': 4}
+Per-dataset:
+  gsm8k: 19/50 levels={'L1(0.5x)': 29, 'L2(0.8x)': 21}
+  gpqa: 2/4 levels={'L1(0.5x)': 2, 'L2(0.8x)': 2}
+  math500: 22/58 levels={'L1(0.5x)': 23, 'L2(0.8x)': 31, 'L3(1.0x)': 4}
+  amc: 3/7 levels={'L1(0.5x)': 4, 'L2(0.8x)': 3}
+  aime: 2/6 levels={'L1(0.5x)': 5, 'L2(0.8x)': 1}
+  Fixed: 48/125 | Remaining: 77
+Saved: /root/benchmarks/results/v3.0-full/iter_v1/progressive_P1_20260505_003313.json

@@ -1,0 +1,42 @@
+Loaded 125 regression cases
+
+>>> Testing: v2: threshold=0.98, steps=8, think_ratio=0.9, min_think=2000
+  [5/125] fixed=0 elapsed=0.9min math500/math500-0123 stop=max_steps E2E=44.7s
+  [10/125] fixed=1 elapsed=1.0min gsm8k/gsm8k-0232 stop=natural E2E=59.3s
+  [15/125] fixed=1 elapsed=1.3min math500/math500-0188 stop=max_steps E2E=70.2s
+  [20/125] fixed=1 elapsed=1.5min gsm8k/gsm8k-0445 stop=max_steps E2E=83.0s
+  [25/125] fixed=1 elapsed=1.8min gsm8k/gsm8k-0072 stop=max_steps E2E=102.7s
+  [30/125] fixed=1 elapsed=1.9min aime/aime-0012 stop=max_steps E2E=100.6s
+  [35/125] fixed=6 elapsed=2.1min gsm8k/gsm8k-0473 stop=max_steps E2E=122.1s
+  [40/125] fixed=6 elapsed=2.3min gsm8k/gsm8k-0406 stop=max_steps E2E=132.4s
+  [45/125] fixed=8 elapsed=2.4min gsm8k/gsm8k-0247 stop=max_steps E2E=137.6s
+  [50/125] fixed=9 elapsed=2.4min math500/math500-0491 stop=max_steps E2E=134.7s
+  [55/125] fixed=11 elapsed=2.5min gpqa/gpqa-0193 stop=natural E2E=137.6s
+  [60/125] fixed=12 elapsed=2.7min gsm8k/gsm8k-0302 stop=max_steps E2E=156.5s
+  [65/125] fixed=13 elapsed=2.8min amc/amc-0012 stop=max_steps E2E=155.6s
+  [70/125] fixed=17 elapsed=2.9min gsm8k/gsm8k-0004 stop=natural E2E=175.3s
+  [75/125] fixed=18 elapsed=3.2min gsm8k/gsm8k-0469 stop=max_steps E2E=186.7s
+  [80/125] fixed=20 elapsed=3.4min gsm8k/gsm8k-0280 stop=max_steps E2E=198.6s
+  [85/125] fixed=21 elapsed=3.4min gsm8k/gsm8k-0159 stop=max_steps E2E=204.1s
+  [90/125] fixed=22 elapsed=3.5min amc/amc-0003 stop=max_steps E2E=202.3s
+  [95/125] fixed=25 elapsed=3.8min math500/math500-0007 stop=max_steps E2E=222.5s
+  [100/125] fixed=28 elapsed=4.0min math500/math500-0401 stop=max_steps E2E=233.3s
+  [105/125] fixed=30 elapsed=4.2min gsm8k/gsm8k-0463 stop=natural E2E=249.3s
+  [110/125] fixed=34 elapsed=4.9min math500/math500-0296 stop=max_steps E2E=285.9s
+  [115/125] fixed=38 elapsed=5.3min math500/math500-0292 stop=max_steps E2E=307.6s
+  [120/125] fixed=41 elapsed=6.6min math500/math500-0119 stop=max_steps E2E=388.4s
+  [125/125] fixed=41 elapsed=13.7min math500/math500-0094 stop=max_steps E2E=817.1s
+Traceback (most recent call last):
+  File "/root/benchmarks/scripts/run_deer_optimize.py", line 338, in <module>
+    asyncio.run(main())
+  File "/usr/lib/python3.10/asyncio/runners.py", line 44, in run
+    return loop.run_until_complete(main)
+  File "/usr/lib/python3.10/asyncio/base_events.py", line 649, in run_until_complete
+    return future.result()
+  File "/root/benchmarks/scripts/run_deer_optimize.py", line 309, in main
+    results, remaining = await run_iteration(regression_cases, params, name)
+  File "/root/benchmarks/scripts/run_deer_optimize.py", line 259, in run_iteration
+    errors = sum(1 for _, c, _ in tasks if c is None)
+  File "/root/benchmarks/scripts/run_deer_optimize.py", line 259, in <genexpr>
+    errors = sum(1 for _, c, _ in tasks if c is None)
+TypeError: cannot unpack non-iterable coroutine object
