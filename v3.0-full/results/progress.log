@@ -1,0 +1,4 @@
+[2026-05-04 18:57:06] deer progress: 0/1270 (0%) elapsed:0.0min ETA:0.0min TP:0.0req/min vLLM:0run/0wait KV:0.00% HBM:97% | gsm8k:0/500 math500:0/500 amc:0/40 gpqa:0/200 aime:0/30
+[2026-05-04 18:58:07] deer progress: 2/1270 (0%) elapsed:1.0min ETA:647.2min TP:2.0req/min vLLM:256run/0wait KV:19.69% HBM:97% | gsm8k:1/500 math500:0/500 amc:0/40 gpqa:1/200 aime:0/30
+[2026-05-04 18:59:08] deer progress: 33/1270 (2%) elapsed:2.0min ETA:76.5min TP:16.2req/min vLLM:252run/0wait KV:35.21% HBM:97% | gsm8k:16/500 math500:4/500 amc:0/40 gpqa:15/200 aime:0/30
+[2026-05-04 19:00:10] deer progress: 94/1270 (7%) elapsed:3.1min ETA:38.3min TP:30.7req/min vLLM:255run/0wait KV:45.35% HBM:97% | gsm8k:53/500 math500:17/500 amc:0/40 gpqa:25/200 aime:1/30
